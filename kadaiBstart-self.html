@@ -75,33 +75,16 @@
       div.addEventListener('click', () => {
 
 
-          if (i === great[0]) {
+          if ((i === great[0])||(i === great[1])||(i === great[2])) {
             div.textContent = '大吉';
             div.classList.add('great');
-          }
-          else if (i === middle[0]) {
+          } else if ((i === middle[0])||(i === middle[1])||(i === middle[2])) {
             div.textContent = '中吉';
             div.classList.add('middle');
-          }
-          else if (i === small[0]) {
+          } else if ((i === small[0])||(i === small[1])||(i === small[2])) {
             div.textContent = '小吉';
             div.classList.add('small');
-          }
-          else if (i === bad[0]) {
-            div.textContent = '凶';
-            div.classList.add('bad');
-          }
-
-           else if ((i === great[1])||(i === great[2])) {
-            div.textContent = '大吉';
-            div.classList.add('great');
-          } else if ((i === middle[1])||(i === middle[2])) {
-            div.textContent = '中吉';
-            div.classList.add('middle');
-          } else if ((i === small[1])||(i === small[2])) {
-            div.textContent = '小吉';
-            div.classList.add('small');
-          } else if ((i === bad[1])||(i === bad[2])) {
+          } else if ((i === bad[0])||(i === bad[1])||(i === bad[2])) {
             div.textContent = '凶';
             div.classList.add('bad');
           }
