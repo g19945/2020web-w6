@@ -2,7 +2,7 @@
 
 <html lang="ja">
 <head>
-  <meta charset="utf-8">
+  <meta charset="shift-jis">
   <title>JavaScript Practice</title>
   <style>
     body {
@@ -59,10 +59,10 @@
      middle[j] = Math.floor(Math.random() * num);
      small[j] = Math.floor(Math.random() * num);
      bad[j] = Math.floor(Math.random() * num);
-    //document.write("‘ĺ‹g"+": "+great[j]+"  –  ");
-    //document.write("’†‹g"+": "+middle[j]+"  –  ");
-    //document.write("Ź¬‹g"+": "+small[j]+"  –  ");
-    //document.write("‹Ą"+": "+bad[j]+"  –  ");
+    //document.write("大吉"+": "+great[j]+"  *  ");
+    //document.write("中吉"+": "+middle[j]+"  *  ");
+    //document.write("小吉"+": "+small[j]+"  *  ");
+    //document.write("凶"+": "+bad[j]+"  *  ");
 
 
   }
@@ -76,38 +76,38 @@
 
 
           if (i === great[0]) {
-            div.textContent = '‘ĺ‹g';
+            div.textContent = '大吉';
             div.classList.add('great');
           }
           else if (i === middle[0]) {
-            div.textContent = '’†‹g';
+            div.textContent = '中吉';
             div.classList.add('middle');
           }
           else if (i === small[0]) {
-            div.textContent = 'Ź¬‹g';
+            div.textContent = '小吉';
             div.classList.add('small');
           }
           else if (i === bad[0]) {
-            div.textContent = '‹Ą';
+            div.textContent = '凶';
             div.classList.add('bad');
           }
 
            else if ((i === great[1])||(i === great[2])) {
-            div.textContent = '‘ĺ‹g';
+            div.textContent = '大吉';
             div.classList.add('great');
           } else if ((i === middle[1])||(i === middle[2])) {
-            div.textContent = '’†‹g';
+            div.textContent = '中吉';
             div.classList.add('middle');
           } else if ((i === small[1])||(i === small[2])) {
-            div.textContent = 'Ź¬‹g';
+            div.textContent = '小吉';
             div.classList.add('small');
           } else if ((i === bad[1])||(i === bad[2])) {
-            div.textContent = '‹Ą';
+            div.textContent = '凶';
             div.classList.add('bad');
           }
 
           else{
-            div.textContent = '’†‹g';
+            div.textContent = '中吉';
             div.classList.add('middle');
           }
 
